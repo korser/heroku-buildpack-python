@@ -158,6 +158,9 @@ if [ ! -d $CACHE_DIR/swig ]; then
   mv swig $CACHE_DIR/swig
   rm swig.tar.gz
   echo "SWIG installed" | indent
+  
+  echo "Copy openssl headers"
+  cp -r /app/include/openssl /app/.heroku/python/include/python2.7
 fi
 
 mkdir -p .paybox
