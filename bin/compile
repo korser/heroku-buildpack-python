@@ -161,7 +161,6 @@ if [ ! -d $CACHE_DIR/swig ]; then
   
   echo "Copy openssl headers"
   cp -r /app/include/openssl /app/.heroku/python/include/python2.7
-  cp -r /app/crypto /app/.heroku/python/include
 fi
 
 mkdir -p .paybox
